@@ -9,7 +9,7 @@
 
 ## Virtual Directory structure
 + **Virtual directory**\
-A single structure that combines all the installed storage devices into a 
+> A single structure that combines all the installed storage devices into a 
 merged directory
 #### Filesystem hierarchy standard (FHS)
 + **/boot** - Boot loader files
@@ -27,17 +27,17 @@ merged directory
 
 ## Command Line Basic
 :star: **uname**\
-Prints out the name of the kernel
+> Prints out the name of the kernel
 + uname -r 
     + Relese option, but version info
 + uname -v
     + Version option, but build info
 + uname -a
-    + Show's everything\
+    + Show's everything
 
 :star: **bash**
 + bash --version
-    + Prints out bash version\
+    + Prints out bash version
 
 #### Built-in command & External command 
 :star: **type**
@@ -50,13 +50,23 @@ External commands are programs that reside within the virtual directory structur
 + man -k whereis | grep ^whereis | tee -a(Append) studyMe.txt
 + man -k updatedb | grep ^updatedb | tee -a studyMe.txt
 
-:star: **man** ( Manual pages )\
-:star: **info** ( Info help system )\
-:star: **help** ( Built-in command help )
+:star: **man** 
+> Manual pages
 
-:star: **history** ( View a list of entered commands )\
-:star: **!!** ( Use previously entered commands )\
-:star: **~/.bash_history** ( Where used commands are stored )\
+:star: **info** 
+> Info help system
+
+:star: **help** 
+> Built-in command help
+
+:star: **history** 
+> View a list of entered commands
+
+:star: **!!** 
+> Use previously entered commands
+
+:star: **~/.bash_history** 
+> Where used commands are stored
 
 ## Displaying Text Contents & Information
 :star: **ls**
@@ -395,7 +405,7 @@ Only file's owner may delete file
     + Berkley software distribution(BSD) options have no dashes
 
 :star: **pgrep**
-+ pgrep bahs
++ pgrep bash
 + pgrep -u jma
 + pgrep -au jma
 + pgrep -at tty1
@@ -415,7 +425,7 @@ Only file's owner may delete file
 >A job is a process
 
 + **Ctrl+z / bg job#**
-    +Move a job to the background
+    + Move a job to the background
 + **command&**
     + Start a job in the background
 + **fg job#**
